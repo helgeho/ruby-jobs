@@ -82,7 +82,7 @@ class GreetTheWorld < RubyJobs::JobBase::Job
       progress i, "Greeted already #{i} times"
       progress result # logging progress by using the progress key
 
-      greetings << result
+      greetings &lt;&lt; result
     end
 
     # logging results
