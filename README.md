@@ -24,7 +24,7 @@ require 'ruby-jobs'
 # You can even create an instance, job = GreetTheWorld.new :greeting => 'How are you',
 # load a job instance job.load_instance :planet, {:period => '?'}
 # and run it with your custom configurations job.run :times => 1.
-class GreetTheWorld < RubyJobs::JobBase::Job
+class GreetTheWorld &lt; RubyJobs::JobBase::Job
   self.requires_rails = false # this job does not require rails, skips the loading to save time
 
   default :greeting, 'Hello'
