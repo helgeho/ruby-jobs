@@ -1,0 +1,8 @@
+.idea/
+ignore/
+temp/
+*.iml
+*.gem
+*.rbc
+.bundle
+.config
