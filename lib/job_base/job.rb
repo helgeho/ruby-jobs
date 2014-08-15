@@ -122,7 +122,7 @@ module RubyJobs
         def load_rails
           initialize
           begin
-            load_rails = require_relative File.expand_path('config/boot', APP_ROOT)
+            load_rails = require File.expand_path('config/boot', APP_ROOT)
             load_rails &&= require APP_PATH
             if load_rails
               puts "loading rails..."
